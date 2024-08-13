@@ -4,12 +4,12 @@ function loco(){
         smooth: true
     });
 
-    // document.querySelector("#foot1 button").addEventListener("click", () => {
-    //     scroll.scrollTo(0);
-    // });
-    // document.querySelector("#hero-end button").addEventListener("click", () => {
-    //     scroll.scrollTo("#page2");
-    // });
+    document.querySelector("#foot1 button").addEventListener("click", () => {
+        scroll.scrollTo(0);
+    });
+    document.querySelector("#hero-end button").addEventListener("click", () => {
+        scroll.scrollTo("#page2");
+    });
 }
 loco();
 
