@@ -8,7 +8,8 @@ LOCOMOTIVE.JS (for smooth scrolling)<br>
 GSAP (GreenSock Animation Platform)<br>
 REMIX ICON (for icon)<br>
 
-PROJECT LIVE LINK :-https://anurag-singh17.github.io/Works.Studio/
+PROJECT LIVE LINK :-https://anurag-singh17.github.io/Works.Studio/<br>
+<br>
 <br>
 ![Screenshot (36)](https://github.com/user-attachments/assets/b3a2f602-72a2-43c1-8e2a-793ba966eac1)
 ![Screenshot (31)](https://github.com/user-attachments/assets/c1cf6634-beb2-4a76-8603-e65642e23b5f)
