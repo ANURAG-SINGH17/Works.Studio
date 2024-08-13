@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "freight big pro";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    min-height: 100vh;
+    background-color: black;
+}
+nav{
+    width: 100%;
+    padding: 2vw 3vw;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    z-index: 8;
+}
+
+
+
+#nav2{
+    display: flex;
+    gap: 5vw;
+    font-size: 1.2vw;
+    align-items: center;
+}
+
+nav svg path{
+    fill:#ffffff
+}
+
+#nav2-non{
+    display: flex;
+    gap: 5vw;
+}
+
+#nav2 a{
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial;
+}
+#nav2 i{
+    font-size: 35px;
+    font-weight: 100;
+    color: #fff;
+}
+
+#page1{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: #ffffff;
+    position: relative;
+}
+
+#hero-sec{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 8;
+}
+
+#hero-sec h1 {
+    font-size: 6.9vw;
+    font-weight: 100;
+    line-height: 4.8vw;
+    letter-spacing: -1px;
+}
+
+#hero-end{
+position: absolute;
+bottom: 1vw;
+width: 100%;
+display: flex;
+justify-content: space-between;
+padding: 0 3vw;
+
+}
+
+#hero-end h1{
+    font-size: 1.3vw;
+    font-weight: 300;
+    font-family:Arial;
+}
+
+#hero-end button{
+    background-color: transparent;
+    border: none;
+}
+
+#yellow-page{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:#f5e41b ;
+    z-index: 10;
+}
+#yellow-page2{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color:#f5e41b ;
+    z-index: 7;
+}
+#page1 video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: 5;
+}
+
+#page2{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container-headings{
+    width: 100%;
+    position: relative;
+    /* background-color: aqua; */
+}
+
+#container-headings h1{
+    font-size: 6.5vw;
+    font-weight: 100;
+    line-height: 5vw;
+    z-index: 2;
+    position: relative;
+}
+
+.move-left{
+    display: flex;
+    background-color: #f5e41b;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    transform: translate(0 ,-50%) scaleY(0);
+    z-index: 1;
+    transition: all ease-in-out 0.3s;
+}
+
+.move {
+    animation-name: anim;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.move h6{
+    font-family: Arial;
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: black;
+    display: inline-block;
+    padding-left: 2vw;
+    opacity: 0;
+    padding: 8px 5px;
+}
+
+@keyframes anim {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#container-headings:hover .move-left{
+    transform: translate(0 ,-50%) scaleY(1);
+}
+
+#container-headings h1:hover{
+   font-style: italic;
+   color: black;
+}
+
+#container-headings:hover .move h6{
+    opacity: 1;
+    transition: all ease-out 0.6s;
+}
+
+#blur {
+    position: absolute;
+    width: 33%;
+    height: 100%;
+    left: 8%;
+    top: 0%;
+    background-image: linear-gradient(to right ,#f5e31b44,#f5e41b, #f5e41b, #f5e31b44);
+    z-index: 7;
+  }
+
+#page3{
+    background-color:#fff;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    padding: 1vw 2.3vw;
+}
+
+#page3 #line1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+    min-height: inherit;
+}
+
+#page3 #line2{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+    min-height: inherit;
+}
+
+#page3 #line3{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+    min-height: 220vw;
+}
+
+#img-cont{
+    overflow: hidden;
+    position: relative;
+}
+
+#img-cont:hover img{
+    scale: 1.1;
+    transition: ease-in-out 0.5s;
+}
+
+ #img-cont img{
+    width: 31vw;
+    object-fit: cover;
+    transition: ease-in-out 0.4s;
+}
+
+.overlay{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: all ease-in-out 0.4s;
+}
+
+.overlay p{
+ color: #fff;
+ font-size: 4vw;
+ text-align: center;
+ line-height: 3vw;
+}
+
+#img-cont:hover .overlay{
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+    z-index: 3;
+}
+
+footer{
+    width: 100%;
+    background-color: #ffffff;
+}
+footer #foot1{
+    text-align: center;
+}
+
+#foot1 button{
+    border: none;
+    background-color: transparent;
+}
+
+#foot1 h1{
+    font-size: 1vw;
+    font-family: Arial;
+    color: rgb(48, 46, 46);
+    padding: 1vw;
+
+}
+
+#foot2{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 7vw 2vw;
+
+}
+
+#foot2 h1{
+    color: #fff;
+    font-family: Arial;
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+
+#foot3{
+    display: flex;
+    gap: 4vw;
+}
+
+@media (max-width:637px) {
+    .nn{
+        display: none;
+
+    }
+    #nav2-non{
+        display: none;
+    }
+    #hero-sec h1 {
+        font-size: 7vw;
+        font-weight: 100;
+        line-height: 5.8vw;
+        letter-spacing: 1px;
+    }
+    #hero-end h1 {
+        font-size: 2.5vw;
+        font-weight: 500;
+        font-family: Arial;
+    }
+    #page1{
+        width: 100%;
+        height: 80vh;
+        background-color: black;
+        color: #ffffff;
+        position: relative;
+    }
+    #hero-end {
+        position: absolute;
+        bottom: 24vw;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3vw;
+      }
+    #page3 #line1{
+        display: none;
+    }
+    #page3  #line2{
+        display: none;
+      }
+      #img-cont img {
+        width: 95vw;
+        height: 90vw;
+        object-fit: cover;
+        transition: ease-in-out 0.4s;
+    }
+    #page3 #line3 {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2vw;
+        min-height: 420vw;
+    }
+}
